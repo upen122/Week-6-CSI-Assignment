@@ -27,7 +27,7 @@ This repository contains various advanced Azure Data Factory (ADF) pipelines dem
 🔹 Uses dynamic SQL with parameterized query
 
 ### 🔧 Pipeline JSON:
- [View Detailed Documentation](Advance_ADF/All_Pipeline_View/Incremental_Load_Pipeline.json)
+ [View Detailed Documentation](AAdvance_ADF/All_Pipeline_View/Incremental_Load_Pipeline.json)
 
 ### 🖼️ Screenshots:
 
