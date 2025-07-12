@@ -13,7 +13,7 @@ This repository contains various advanced Azure Data Factory (ADF) pipelines dem
 🔹 Copy data from local SQL to Azure SQL table
 
 ### 🔧 Pipeline JSON:
-- `Local_To_AzureSQLjson/`
+- `Advance_ADF/All_Pipeline_View/Local_To_AzureSQL.json/`
 
 ### 🖼️ Screenshots:
 - ![SHIR Setup](Screenshots/Local_To_Azure_sql.png)
@@ -76,26 +76,10 @@ This repository contains various advanced Azure Data Factory (ADF) pipelines dem
 
 ---
 
-## 👤 Author
-
-**Upen Singh**  
-Data Engineering Intern @ Celebal Tech  
-GitHub: [@upen122](https://github.com/upen122)
-
-
----
-
 ## ❌ Skipped Task (SFTP Extraction)
 Due to environment limitations, the SFTP pipeline was skipped.
 
 ---
-
-## 🧠 How to Use
-- Navigate to each folder for JSON pipeline exports, screenshots, and step-by-step setup guide.
-- Import pipelines into ADF using the "Manage hub" → "ARM Template" if required.
-
-## 📷 Sample Screenshots
-> See `screenshots/` folders in each task for detailed configuration and run output.
 
 ## 📅 Author
 **Upen Singh**  
