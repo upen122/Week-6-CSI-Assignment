@@ -13,7 +13,7 @@ This repository contains various advanced Azure Data Factory (ADF) pipelines dem
 🔹 Copy data from local SQL to Azure SQL table
 
 ### 🔧 Pipeline JSON:
-- `Advance_ADF/All_Pipeline_View/Local_To_AzureSQL.json/`
+ [View Detailed Documentation](Advance_ADF/All_Pipeline_View/Local_To_AzureSQL.json)
 
 ### 🖼️ Screenshots:
 - ![SHIR Setup](Screenshots/Local_To_Azure_sql.png)
@@ -27,11 +27,15 @@ This repository contains various advanced Azure Data Factory (ADF) pipelines dem
 🔹 Uses dynamic SQL with parameterized query
 
 ### 🔧 Pipeline JSON:
-- `Incremental Load Pipelinejson/`
+ [View Detailed Documentation](Advance_ADF/All_Pipeline_View/Incremental_Load_Pipeline.json)
 
 ### 🖼️ Screenshots:
+
+### Watermark Variable :
 - ![Watermark Variable](Screenshots/watermark-variable.png)
-- ![Incremental Load Pipeline](Screenshots/Incremental Load Pipeline.png)
+
+### Pipeline :
+- ![Incremental_Piepline](Screenshots/Incremental_Load_Pipeline.png)
 
 ---
 
@@ -44,7 +48,11 @@ This repository contains various advanced Azure Data Factory (ADF) pipelines dem
 - Configured in the ADF GUI as daily schedule
 
 ### 🖼️ Screenshots:
+
+### Incermental Daily Trigger:
 - ![Incremental Daily Trigger](Screenshots/Incremental_daily_trigger.png)
+
+### Last Saturday Logic
 - ![Last Saturday Logic](Screenshots/Last_Satuurday_Trigger.png)
 
 ---
