@@ -9,8 +9,6 @@
 ![LastSaturdayTrigger](https://img.shields.io/badge/Last--Saturday--Trigger-critical)
 ![SHIR](https://img.shields.io/badge/Self--Hosted--IR-important)
 
----
-
 This repository contains various advanced Azure Data Factory (ADF) pipelines demonstrating real-world integration use cases, automation, and data engineering best practices.
 
 ---
@@ -28,7 +26,7 @@ This repository contains various advanced Azure Data Factory (ADF) pipelines dem
 [View Detailed Documentation](Advance_ADF/All_Pipeline_View/Local_To_AzureSQL.json)
 
 ### 🖼️ Screenshots:
-- ![SHIR Setup](../Screenshots/Local_To_Azure_sql.png)
+- ![SHIR Setup](Screenshots/Local_To_Azure_sql.png)
 
 ---
 
@@ -42,8 +40,8 @@ This repository contains various advanced Azure Data Factory (ADF) pipelines dem
 [View Detailed Documentation](Advance_ADF/All_Pipeline_View/Incremental_Load_Pipeline.json)
 
 ### 🖼️ Screenshots:
-- ![Watermark Variable](../Screenshots/watermark-variable.png)
-- ![Incremental Pipeline](../Screenshots/Incremental_Load_Pipeline.png)
+- ![Watermark Variable](Screenshots/watermark-variable.png)
+- ![Incremental Pipeline](Screenshots/Incremental_Load_Pipeline.png)
 
 ### 🧠 Watermark Logic (Dynamic SQL Query)
 
@@ -67,8 +65,8 @@ This repository contains various advanced Azure Data Factory (ADF) pipelines dem
 - Configured in the ADF GUI as daily schedule
 
 ### 🖼️ Screenshots:
-- ![Incremental Daily Trigger](../Screenshots/Incremental_daily_trigger.png)
-- ![Last Saturday Logic](../Screenshots/Last_Satuurday_Trigger.png)
+- ![Incremental Daily Trigger](Screenshots/Incremental_daily_trigger.png)
+- ![Last Saturday Logic](Screenshots/Last_Satuurday_Trigger.png)
 
 ### 🧠 Last Saturday Execution Logic
 
@@ -91,7 +89,7 @@ This repository contains various advanced Azure Data Factory (ADF) pipelines dem
 🔹 Helps auto-recover from transient failures
 
 ### 🖼️ Screenshots:
-- ![Retry Logic](../Screenshots/Retry_Logic.png)
+- ![Retry Logic](Screenshots/Retry_Logic.png)
 
 ### 🔁 Retry Policy Configuration
 
