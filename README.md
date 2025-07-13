@@ -2,8 +2,9 @@
 
 This repository contains various advanced Azure Data Factory (ADF) pipelines demonstrating real-world integration use cases, automation, and data engineering best practices.
 
-## 📌 Completed Tasks
+---
 
+## 📌 Completed Tasks
 
 ---
 
@@ -13,7 +14,7 @@ This repository contains various advanced Azure Data Factory (ADF) pipelines dem
 🔹 Copy data from local SQL to Azure SQL table
 
 ### 🔧 Pipeline JSON:
- [View Detailed Documentation](Advance_ADF/All_Pipeline_View/Local_To_AzureSQL.json)
+[View Detailed Documentation](Advance_ADF/All_Pipeline_View/Local_To_AzureSQL.json)
 
 ### 🖼️ Screenshots:
 - ![SHIR Setup](Screenshots/Local_To_Azure_sql.png)
@@ -27,17 +28,22 @@ This repository contains various advanced Azure Data Factory (ADF) pipelines dem
 🔹 Uses dynamic SQL with parameterized query
 
 ### 🔧 Pipeline JSON:
- [View Detailed Documentation](AAdvance_ADF/All_Pipeline_View/Incremental_Load_Pipeline.json)
+[View Detailed Documentation](Advance_ADF/All_Pipeline_View/Incremental_Load_Pipeline.json)
 
 ### 🖼️ Screenshots:
-
-### Watermark Variable :
 - ![Watermark Variable](Screenshots/watermark-variable.png)
-
-### Pipeline :
 - ![Incremental_Piepline](Screenshots/Incremental_Load_Pipeline.png)
 
+### 🧠 Watermark Logic (Dynamic SQL Query)
+```json
+{
+  "sqlReaderQuery": {
+    "value": "@concat('SELECT * FROM Customers WHERE id > ', if(empty(activity('GetLastLoadedId').output.firstRow.LastLoadedId), '0', string(activity('GetLastLoadedId').output.firstRow.LastLoadedId)))",
+    "type": "Expression"
+  }
+} ``` json
 ---
+
 
 ## ✅ Task 3: Automate Daily Runs with Trigger
 
