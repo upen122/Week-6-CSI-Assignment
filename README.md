@@ -32,7 +32,7 @@ This repository contains various advanced Azure Data Factory (ADF) pipelines dem
 
 ### 🖼️ Screenshots:
 - ![Watermark Variable](Screenshots/watermark-variable.png)
-- ![Incremental Pipeline](Screenshots/Incremental_Load_Pipeline.png)
+- ![Incremental Pipeline](../Screenshots/Incremental_Load_Pipeline.png)
 
 ### 🧠 Watermark Logic (Dynamic SQL Query)
 
