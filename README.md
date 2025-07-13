@@ -35,15 +35,17 @@ This repository contains various advanced Azure Data Factory (ADF) pipelines dem
 - ![Incremental_Piepline](Screenshots/Incremental_Load_Pipeline.png)
 
 ### 🧠 Watermark Logic (Dynamic SQL Query)
+
 ```json
 {
   "sqlReaderQuery": {
     "value": "@concat('SELECT * FROM Customers WHERE id > ', if(empty(activity('GetLastLoadedId').output.firstRow.LastLoadedId), '0', string(activity('GetLastLoadedId').output.firstRow.LastLoadedId)))",
     "type": "Expression"
   }
-} ``` json
----
+}
+```
 
+---
 
 ## ✅ Task 3: Automate Daily Runs with Trigger
 
@@ -54,12 +56,19 @@ This repository contains various advanced Azure Data Factory (ADF) pipelines dem
 - Configured in the ADF GUI as daily schedule
 
 ### 🖼️ Screenshots:
-
-### Incermental Daily Trigger:
 - ![Incremental Daily Trigger](Screenshots/Incremental_daily_trigger.png)
-
-### Last Saturday Logic
 - ![Last Saturday Logic](Screenshots/Last_Satuurday_Trigger.png)
+
+### 🧠 Last Saturday Execution Logic
+
+```json
+{
+  "expression": {
+    "value": "@and(\n  equals(dayOfWeek(utcNow()), 6),\n  less(addDays(utcNow(), 7), startOfMonth(addDays(utcNow(), 32)))\n)",
+    "type": "Expression"
+  }
+}
+```
 
 ---
 
@@ -72,6 +81,20 @@ This repository contains various advanced Azure Data Factory (ADF) pipelines dem
 
 ### 🖼️ Screenshots:
 - ![Retry Logic](Screenshots/Retry_Logic.png)
+
+### 🔁 Retry Policy Configuration
+
+```json
+{
+  "policy": {
+    "timeout": "0.12:00:00",
+    "retry": 3,
+    "retryIntervalInSeconds": 60,
+    "secureOutput": false,
+    "secureInput": false
+  }
+}
+```
 
 ---
 
@@ -91,10 +114,12 @@ This repository contains various advanced Azure Data Factory (ADF) pipelines dem
 ---
 
 ## ❌ Skipped Task (SFTP Extraction)
+
 Due to environment limitations, the SFTP pipeline was skipped.
 
 ---
 
 ## 📅 Author
+
 **Upen Singh**  
 M.Tech Aspirant | Data Engineering Enthusiast | Jaipur, India
